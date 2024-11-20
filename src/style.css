@@ -157,26 +157,36 @@ h2 {
   z-index: 0;
 }
 
+#sticky-hero img {
+  object-fit: cover;
+}
+
 #sticky-hero-2 {
   position: absolute;
-  top: 300vh;
+  top: 200vh;
   z-index: 0;
 }
 
+#sticky-hero-2 img {
+  object-fit: cover;
+}
+
 .sticky-background {
-  height: calc(300vh - 75px);
-  background-color: lightgray;
+  height: 300vh;
+
+  /* gizmo for tracking where the sticky goes */
+  background-color: var(--gray-950);
+
   width: 100%;
 }
 
 .sticky-background img {
-  position: sticky;
   position: -webkit-sticky;
+  position: sticky;
   top: 0;
 
   width: 100%;
   height: 100vh;
-  object-fit: cover;
 }
 
 #hero-wrapper {
@@ -187,10 +197,6 @@ h2 {
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
-
-/* #caption-area img {
-  width: 50%;
-} */
 
 #hero-area h2,
 #hero-area p,
@@ -243,18 +249,45 @@ h2 {
   top: calc(100vh);
   display: flex;
   align-items: center;
+}
 
-  height: 100vh;
+.bg-black {
+  background-color: var(--gray-950);
 }
 
 #services {
-  background-color: var(--gray-950);
   position: absolute;
   top: calc(200vh);
   display: flex;
   align-items: center;
+}
 
-  height: calc(100vh - var(--header-height));
+#trainers {
+  position: absolute;
+  top: calc(300vh);
+  display: flex;
+  align-items: center;
+}
+
+#trainers img {
+  color: var(--gray-050);
+}
+
+#testimonials {
+  position: absolute;
+  top: calc(400vh);
+  display: flex;
+  align-items: center;
+}
+
+#contact {
+  position: absolute;
+  top: calc(500vh);
+}
+
+footer {
+  position: absolute;
+  top: calc(600vh);
 }
 
 form {
