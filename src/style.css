@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap");
+
+:root {
+  --header-height: 75px;
+  --gray-050: #f9fafb;
+  --gray-950: #030712;
+  --lime-300: #bef264;
+  --lime-950: #1a2e05;
+}
+
+body {
+  margin: unset;
+  background-color: var(--gray-950);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--gray-950);
+  height: var(--header-height);
+  z-index: 10;
+}
+
+h1,
+h3,
+footer,
+label,
+li,
+p,
+a {
+  color: var(--gray-050);
+}
+
+h2 {
+  color: var(--lime-300);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+}
+
+p,
+a,
+li {
+  font-family: "Roboto Slab", serif;
+}
+
+#hamburger-btn {
+  border: none;
+  background-color: unset;
+  color: var(--gray-050);
+  cursor: pointer;
+}
+
+header h1 {
+  margin: 0;
+
+  font-family: "Oswald", sans-serif;
+  padding: 0 0 0 1rem;
+}
+
+.lime {
+  color: var(--lime-300);
+}
+
+.window {
+  background-color: color-mix(in srgb, var(--gray-950) 50%, transparent);
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
+
+  border-top: 1px solid color-mix(in srgb, var(--gray-950) 10%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--gray-950) 10%, transparent);
+
+  box-shadow: 0 0.2rem 1rem 0 var(--gray-950);
+}
+
+header p {
+  margin: 0;
+  padding: 0 0 0 1rem;
+  font-size: x-small;
+}
+
+#logo {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#logo span {
+  font-size: 1.75rem;
+}
+
+nav ul {
+  display: none;
+}
+
+nav li,
+nav a {
+  padding: 1rem 0;
+}
+
+nav a {
+  white-space: nowrap;
+}
+
+h1 :not(header),
+h2 {
+  text-align: center;
+}
+
+.h-full {
+  height: 100vh;
+}
+.w-full {
+  width: 100%;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+#gradient-container {
+  background: var(--gray-950);
+  position: relative;
+  z-index: 1;
+}
+#gradient {
+  background: radial-gradient(
+    circle at left 20% top 45%,
+    color-mix(in srgb, var(--lime-300) 50%, transparent) 0%,
+    var(--gray-950) 75%
+  );
+  width: 100%;
+  height: 100%;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+
+#sticky-hero {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+#sticky-hero-2 {
+  position: absolute;
+  top: 300vh;
+  z-index: 0;
+}
+
+.sticky-background {
+  height: calc(300vh - 75px);
+  background-color: lightgray;
+}
+
+.sticky-background img {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#hero-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+/* #caption-area img {
+  width: 50%;
+} */
+
+#hero-area h2,
+#hero-area p,
+#hero-area a {
+  text-align: left;
+}
+
+#hero-area h2 {
+  font-size: 2rem;
+  color: var(--gray-050);
+}
+
+#hero-area a {
+  color: var(--lime-300);
+}
+
+#caption-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5rem;
+}
+#caption-area h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  letter-spacing: -0.25rem;
+  line-height: 3.5rem;
+  font-style: italic;
+  font-size: 4rem;
+
+  position: relative;
+  z-index: 1;
+}
+#caption-area div {
+  display: none;
+}
+#caption-area img {
+  width: 100%;
+  object-fit: cover;
+  border-bottom: 2px solid color-mix(in srgb, var(--lime-300) 85%, transparent);
+  border-radius: 0 0 5rem 1rem;
+  box-shadow: 0 0.5rem 1rem -0.5rem var(--lime-300);
+}
+
+#about {
+  position: absolute;
+  top: calc(100vh);
+  display: flex;
+  align-items: center;
+
+  height: 100vh;
+}
+
+#services {
+  background-color: var(--gray-950);
+  position: absolute;
+  top: calc(200vh);
+  display: flex;
+  align-items: center;
+
+  height: calc(100vh - var(--header-height));
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media only screen and (min-width: 350px) {
+  #caption-area div {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  header p {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #hamburger-btn {
+    display: none;
+  }
+}
+
+.gizmo {
+  box-sizing: border-box;
+  border: 1px solid var(--gray-050);
+}

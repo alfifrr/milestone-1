@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Gravity Gym - Your destination for fitness and health. Join us to achieve your fitness goals with our state-of-the-art equipment and professional trainers."
+    />
+    <title>Gravity Gym | Fitness & Wellness</title>
+
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <h1 class="gizmo">GRAVITY<span class="lime">GYM</span></h1>
+        <p>Your Destination towards Health and Wellness</p>
+      </div>
+
+      <button type="button" id="hamburger-btn" class="gizmo" title="Menu">
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-width="2"
+            d="M5 7h14M5 12h14M5 17h14"
+          />
+        </svg>
+
+        <svg
+          display="none"
+          class="w-6 h-6 text-gray-800 dark:text-white"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18 17.94 6M18 18 6.06 6"
+          />
+        </svg>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#trainers">Trainers</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div id="gradient-container" class="h-full">
+          <div id="gradient"></div>
+        </div>
+        <div id="sticky-hero" class="sticky-background">
+          <img
+            src="./src/img/pexels-victorfreitas-2261479.jpg"
+            alt="pexels-victorfreitas-2261479"
+          />
+        </div>
+        <div id="sticky-hero-2" class="sticky-background">
+          <img
+            src="./src/img/pexels-leonardho-1552242.jpg"
+            alt="pexels-leonardho-1552242"
+          />
+        </div>
+        <div id="hero-wrapper" class="h-full w-full">
+          <div id="hero-area" class="w-full px-1">
+            <div id="caption-area">
+              <h1>GRAVITY <span class="lime">GYM</span></h1>
+              <div>
+                <img src="./src/img/ernest-khalimov.webp" alt="gigachad" />
+              </div>
+            </div>
+            <h2>Achieve Your Fitness Goals Today!</h2>
+            <p>
+              Everybody deserves to be fit, and you should too! Don't be afraid,
+              join us today, start your journey, and feel the difference!
+            </p>
+            <a href="#contact" class="btn">Get Started For Free</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="window backdrop-blur px-1">
+          <h2>About Us</h2>
+          <p>
+            Gravity Gym is committed to helping you lead a healthy and active
+            lifestyle. Our state-of-the-art facility with cutting edge
+            technology and experienced trainers make fitness enjoyable and
+            effective since 2015.
+          </p>
+          <ul>
+            <li>Modern equipment and facilities</li>
+            <li>Personalized training programs</li>
+            <li>
+              A welcoming community where everyone feels at home and supported
+              in their fitness journey
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="services" class="w-full">
+        <div class="px-1">
+          <h2>Our Services</h2>
+          <div class="services-grid">
+            <article>
+              <h3>Personal Training</h3>
+              <p>Work with certified trainers to achieve your fitness goals.</p>
+            </article>
+            <article>
+              <h3>Group Classes</h3>
+              <p>
+                Not just calisthenics! Also join our energizing classes like
+                yoga, Zumba, and HIIT.
+              </p>
+            </article>
+            <article>
+              <h3>Nutrition Coaching</h3>
+              <p>Receive guidance on meal planning and healthy eating.</p>
+            </article>
+            <article>
+              <h3>Cardio & Strength Equipment</h3>
+              <p>Access a wide range of premium machines and weights.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="trainers">
+        <div class="h-full">
+          <h2>Meet Our Trainers</h2>
+          <div class="trainers-grid">
+            <article>
+              <img src="" alt="Trainer 1" />
+              <h3>Arnold Doe</h3>
+              <p>Specializes in weightlifting and muscle building.</p>
+            </article>
+            <article>
+              <img src="" alt="Trainer 2" />
+              <h3>Alex Calimove</h3>
+              <p>Expert in calisthenic training.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <div class="h-full">
+          <h2>What Our Members Say</h2>
+          <blockquote>
+            <p>
+              "Gravity Gym transformed my life! The trainers are amazing, and
+              the atmosphere is so motivating!"
+            </p>
+            <footer>- John Doe</footer>
+          </blockquote>
+          <blockquote>
+            <p>
+              "I love the group classes. They are fun, challenging, and exactly
+              what I needed."
+            </p>
+            <footer>- Firman Accampsy</footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="h-full">
+          <h2>Contact Us</h2>
+          <p>Ready to join or have questions? Reach out to us!</p>
+          <form action="submit-form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p>
+          &copy; 2024 Gravity <span class="lime">Gym</span>. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./src/script.js"></script>
+  </body>
+</html>
