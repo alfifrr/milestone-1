@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --header-height: 75px;
   --gray-050: #f9fafb;
@@ -162,6 +166,7 @@ h2 {
 .sticky-background {
   height: calc(300vh - 75px);
   background-color: lightgray;
+  width: 100%;
 }
 
 .sticky-background img {
