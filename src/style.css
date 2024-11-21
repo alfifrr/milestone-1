@@ -54,7 +54,10 @@ h3 {
 
 p,
 a,
-li {
+li,
+label,
+input,
+textarea {
   font-family: "Roboto Slab", serif;
 }
 
@@ -99,21 +102,56 @@ header p {
   flex-grow: 1;
 }
 
+#logo a {
+  text-decoration: none;
+}
+
 #logo span {
   font-size: 1.75rem;
 }
 
-nav ul {
+#navigation ul {
   display: none;
 }
 
-nav li,
-nav a {
+#navigation li,
+#navigation a {
   padding: 1rem 0;
 }
 
-nav a {
+#navigation a {
   white-space: nowrap;
+}
+
+#dropdown {
+  position: absolute;
+  top: var(--header-height);
+  right: 0;
+}
+#dropdown ul {
+  list-style-type: none;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  -webkit-backdrop-filter: blur(0.15rem);
+  backdrop-filter: blur(0.15rem);
+  background-color: color-mix(in srgb, var(--gray-950) 25%, transparent);
+  border: 1px solid color-mix(in srgb, var(--lime-300) 85%, transparent);
+  border-radius: 0.8rem 0 0 0.8rem;
+  box-shadow: -0.5rem 0.5rem 1rem -0.75rem var(--lime-300);
+}
+#dropdown a {
+  white-space: nowrap;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+#dropdown a:active {
+  background-color: var(--lime-300);
+  color: var(--gray-950);
 }
 
 h1 :not(header),
@@ -157,18 +195,16 @@ h2 {
   z-index: 0;
 }
 
-#sticky-hero img {
+#sticky-hero img,
+#sticky-hero-2 img {
   object-fit: cover;
+  filter: grayscale(1) brightness(0.5);
 }
 
 #sticky-hero-2 {
   position: absolute;
   top: 200vh;
   z-index: 0;
-}
-
-#sticky-hero-2 img {
-  object-fit: cover;
 }
 
 .sticky-background {
@@ -285,6 +321,11 @@ h2 {
   top: calc(500vh);
 }
 
+#contact > div {
+  display: flex;
+  flex-direction: column;
+}
+
 footer {
   position: absolute;
   top: calc(600vh);
@@ -293,10 +334,32 @@ footer {
 form {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+}
+
+#name {
+  background-color: color-mix(in srgb, var(--lime-950) 50%, transparent);
+}
+
+#submit-btn {
+  background: var(--lime-300);
+  color: var(--gray-950);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
 }
 
 footer p {
   margin: 0;
+}
+
+@media (hover: hover) {
+  #dropdown a:hover {
+    background-color: var(--lime-300);
+    color: var(--gray-950);
+  }
 }
 
 @media only screen and (min-width: 350px) {
@@ -312,7 +375,7 @@ footer p {
 }
 
 @media only screen and (min-width: 640px) {
-  nav ul {
+  #navigation ul {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;

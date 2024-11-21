@@ -14,7 +14,9 @@
   <body>
     <header>
       <div id="logo">
-        <h1 class="gizmo">GRAVITY<span class="lime">GYM</span></h1>
+        <a href="#hero"
+          ><h1 class="gizmo">GRAVITY<span class="lime">GYM</span></h1></a
+        >
         <p>Your Destination towards Health and Wellness</p>
       </div>
 
@@ -54,7 +56,7 @@
           />
         </svg>
       </button>
-      <nav>
+      <nav id="navigation">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
@@ -63,6 +65,18 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
+      <div id="dropdown">
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section id="hero">
@@ -189,7 +203,7 @@
           <h2>Contact Us</h2>
           <p>
             Ready to join or have questions? Don't shy away, reach out to us! We
-            value utmost privacy!
+            value your utmost privacy!
           </p>
           <form action="submit-form.php" method="POST">
             <label for="name">Name:</label>
@@ -201,7 +215,7 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
-            <button type="submit">Submit</button>
+            <button id="submit-btn" type="submit">SUBMIT</button>
           </form>
         </div>
       </section>
