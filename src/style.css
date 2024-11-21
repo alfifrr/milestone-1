@@ -62,10 +62,11 @@ textarea {
 }
 
 #hamburger-btn {
-  border: none;
   background-color: unset;
   color: var(--gray-050);
   cursor: pointer;
+  height: 100%;
+  padding: 0 1.5rem;
 }
 
 header h1 {
@@ -124,6 +125,7 @@ header p {
 }
 
 #dropdown {
+  display: none;
   position: absolute;
   top: var(--header-height);
   right: 0;
@@ -238,6 +240,7 @@ h2 {
 #hero-area p,
 #hero-area a {
   text-align: left;
+  text-decoration: none;
 }
 
 #hero-area h2 {
@@ -296,6 +299,37 @@ h2 {
   top: calc(200vh);
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+#services-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  overflow: auto;
+  max-height: 80vh;
+
+  position: relative;
+}
+
+#services-grid > article {
+  border: 1px solid var(--lime-300);
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  max-height: 400px;
+  box-sizing: border-box;
+}
+
+#services-grid > article > img {
+  width: 75%;
+  height: 100%;
+  object-fit: contain;
+  overflow: hidden;
 }
 
 #trainers {
@@ -319,6 +353,16 @@ h2 {
 #contact {
   position: absolute;
   top: calc(500vh);
+}
+
+#arrow {
+  position: relative;
+  top: 40px;
+  font-size: 10rem;
+  font-style: italic;
+  line-height: 0px;
+
+  display: none;
 }
 
 #contact > div {
@@ -366,6 +410,13 @@ footer p {
   #caption-area div {
     display: block;
   }
+  #get-started {
+    position: relative;
+    top: -30px;
+  }
+  #arrow {
+    display: inline-block;
+  }
 }
 
 @media only screen and (min-width: 480px) {
@@ -375,8 +426,15 @@ footer p {
 }
 
 @media only screen and (min-width: 640px) {
+  #logo {
+    flex-grow: unset;
+  }
+  #navigation {
+    flex-grow: 1;
+  }
   #navigation ul {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
@@ -384,6 +442,12 @@ footer p {
 
   #hamburger-btn {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #services-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

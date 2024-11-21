@@ -15,12 +15,12 @@
     <header>
       <div id="logo">
         <a href="#hero"
-          ><h1 class="gizmo">GRAVITY<span class="lime">GYM</span></h1></a
+          ><h1>GRAVITY<span class="lime">GYM</span></h1></a
         >
         <p>Your Destination towards Health and Wellness</p>
       </div>
 
-      <button type="button" id="hamburger-btn" class="gizmo" title="Menu">
+      <button type="button" id="hamburger-btn" title="Menu">
         <svg
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +108,9 @@
               Everybody deserves to be fit, and you should too! Don't be afraid,
               join us today, start your journey, and feel the difference!
             </p>
-            <a href="#contact" class="btn">Get Started For Free</a>
+            <a id="get-started" href="#contact" class="btn"
+              >Get Started For Free<span id="arrow">&#62;</span></a
+            >
           </div>
         </div>
       </section>
@@ -134,15 +136,23 @@
       </section>
 
       <section id="services" class="h-full w-full bg-black">
-        <div class="px-1 w-full">
+        <div class="px-1">
           <h2>Our Services</h2>
-          <div class="services-grid">
+          <div id="services-grid">
             <article>
               <h3>Personal Training</h3>
+              <img
+                src="./src/img/pexels-sabel-blanco-662810-1544774.jpg"
+                alt="pexels-sabel-blanco-662810-1544774"
+              />
               <p>Work with certified trainers to achieve your fitness goals.</p>
             </article>
             <article>
               <h3>Group Classes</h3>
+              <img
+                src="./src/img/pexels-wellness-gallery-catalyst-foundation-229759139-12086686.jpg"
+                alt="pexels-wellness-gallery-catalyst-foundation-229759139-12086686"
+              />
               <p>
                 Not just calisthenics! Also join our energizing classes like
                 yoga, Zumba, and HIIT.
@@ -150,10 +160,18 @@
             </article>
             <article>
               <h3>Nutrition Coaching</h3>
+              <img
+                src="./src/img/pexels-yaroslav-shuraev-8844379.jpg"
+                alt="pexels-yaroslav-shuraev-8844379"
+              />
               <p>Receive guidance on meal planning and healthy eating.</p>
             </article>
             <article>
               <h3>Cardio & Strength Equipment</h3>
+              <img
+                src="./src/img/pexels-ivan-samkov-4164766.jpg"
+                alt="pexels-ivan-samkov-4164766"
+              />
               <p>Access a wide range of premium machines and weights.</p>
             </article>
           </div>

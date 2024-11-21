@@ -1,22 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerBtn = document.getElementById("hamburger-btn");
   const iconHamburger = document.querySelectorAll("svg");
+  const dropdown = document.getElementById("dropdown");
   let dropdownState = false;
 
   hamburgerBtn.addEventListener("click", function () {
     // toggle dropdown state between true and false
     dropdownState = !dropdownState;
 
-    // using ternary operator to toggle display property
-    iconHamburger[0].style.display = dropdownState ? "none" : "block";
-    iconHamburger[1].style.display = dropdownState ? "block" : "none";
+    if (dropdownState) {
+      dropdown.style.display = "block";
+      iconHamburger[0].style.display = "none";
+      iconHamburger[1].style.display = "block";
+    } else {
+      dropdown.style.display = "none";
+      iconHamburger[0].style.display = "block";
+      iconHamburger[1].style.display = "none";
+    }
   });
 
   // adding gizmo class to all anchor tags (dev)
-  const allLinks = document.querySelectorAll("a");
-  allLinks.forEach(function (link) {
-    link.classList.add("gizmo");
-  });
+  // const allLinks = document.querySelectorAll("a");
+  // allLinks.forEach(function (link) {
+  //   link.classList.add("gizmo");
+  // });
 
   // offset scroll by 75px on all anchor tags click
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
