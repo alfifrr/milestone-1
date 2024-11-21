@@ -111,17 +111,39 @@ header p {
   font-size: 1.75rem;
 }
 
-#navigation ul {
-  display: none;
+#navigation {
+  height: 100%;
 }
 
-#navigation li,
-#navigation a {
-  padding: 1rem 0;
+#navigation ul {
+  display: none;
+  margin: 0;
+  height: 100%;
+  gap: 1rem;
 }
+
+#navigation > ul > li {
+  display: flex;
+}
+
+/* #navigation li,
+#navigation a {
+  padding: 1.5rem 0;
+} */
 
 #navigation a {
   white-space: nowrap;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  /* box-sizing: border-box; */
+
+  /* transition: border-bottom 1s ease-in-out; */
+}
+
+#navigation a:hover {
+  border-bottom: 3px solid var(--lime-300);
 }
 
 #dropdown {
@@ -246,6 +268,7 @@ h2 {
 #hero-area h2 {
   font-size: 2rem;
   color: var(--gray-050);
+  line-height: 2rem;
 }
 
 #hero-area a {
@@ -257,7 +280,7 @@ h2 {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 #caption-area h1 {
   display: flex;
@@ -310,6 +333,12 @@ h2 {
   max-height: 80vh;
 
   position: relative;
+
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+#services-grid::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 #services-grid > article {
@@ -357,12 +386,12 @@ h2 {
 
 #arrow {
   position: relative;
-  top: 40px;
-  font-size: 10rem;
-  font-style: italic;
+  font-size: 5rem;
+  top: 3px;
   line-height: 0px;
 
   display: none;
+  animation: arrow-right 3s infinite ease;
 }
 
 #contact > div {
@@ -412,7 +441,13 @@ footer p {
   }
   #get-started {
     position: relative;
-    top: -30px;
+    font-style: italic;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    padding-right: 5rem;
   }
   #arrow {
     display: inline-block;
@@ -420,12 +455,20 @@ footer p {
 }
 
 @media only screen and (min-width: 480px) {
+  #caption-area h1 {
+    font-size: 5rem;
+    line-height: 4.3rem;
+  }
   header p {
     margin: 0;
   }
 }
 
 @media only screen and (min-width: 640px) {
+  #caption-area h1 {
+    font-size: 6rem;
+    line-height: 5.3rem;
+  }
   #logo {
     flex-grow: unset;
   }
@@ -434,10 +477,11 @@ footer p {
   }
   #navigation ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
+    margin-right: 1rem;
   }
 
   #hamburger-btn {
@@ -448,6 +492,18 @@ footer p {
 @media only screen and (min-width: 1024px) {
   #services-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@keyframes arrow-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0.5rem);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 

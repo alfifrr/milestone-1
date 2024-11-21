@@ -53,17 +53,17 @@ Gravity Gym is a modern gym website designed with a mobile-first approach. It is
 
 ### 1. Initial HTML Structure
 
-The project started with semantic HTML, creating a well-structured document containing:
+This project started with semantic HTML structure, creating a well-structured document containing:
 
 - Logical sections (`header`, `main`, `footer`) for easier navigation.
-- Semantic elements like `section`, `article`, and `nav`.
+- Semantic elements consist of several `section`, `article`, and `nav`.
 
 ### 2. Adding CSS Styling
 
-Styling was introduced with a mobile-first philosophy:
+Styling was introduced with a mobile-first approach:
 
 - **Fonts**: Google Fonts `Oswald` and `Roboto Slab`.
-- **Theme**: Black background with lime accents for a modern look.
+- **Theme**: Black background with lime accents for a bold and modern look.
 - **Effects**: Parallax scrolling and offset adjustment for headers.
 
 ### 3. Enhancing with JavaScript
@@ -91,17 +91,18 @@ Deployed the project to a custom domain via Netlify and Niagahoster:
 
 ### Steps
 
-1. Clone the repository:
+1. Head to your project directory of your liking, make sure you already installed [Git](https://git-scm.com/), then open up Command Palette or Command Prompt
+2. Clone the repository:
 
    ```bash
    git clone git@github.com:alfifrr/milestone-1.git
    ```
 
-2. Navigate to the project directory:
+3. Navigate to the project directory:
    ```bash
    cd milestone-1
    ```
-3. Open the project in Visual Studio Code and start a live server:
+4. Open the project in Visual Studio Code and start a live server:
    - Use the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
    - Alternatively, open `index.html` directly in your browser.
 
@@ -111,7 +112,7 @@ Deployed the project to a custom domain via Netlify and Niagahoster:
 
 ### Deploy to Custom Domain
 
-1. **Purchase a domain** (e.g., via Niagahoster).
+1. **(if you already purchased a domain and already deployed a Netlify site, go to step 5) Purchase a domain** (e.g., via Niagahoster).
 2. **Add the custom domain to Netlify**:
    - In the **Netlify dashboard**, go to **Domain Management** > Add Domain.
    - Enter the purchased domain and use Netlify DNS.
@@ -119,6 +120,20 @@ Deployed the project to a custom domain via Netlify and Niagahoster:
    - Replace your domain's nameservers with those provided by Netlify.
    - Allow 1-24 hours for propagation.
 4. Access your site via your custom domain once the changes propagate.
+5. If you want to un-link and change your Netlify page to the existing domain, go to the Netlify site dashboard.
+   **Add new site > Import an existing project**
+   ![01](./src/img/readme/01-createapublicclonerepo.jpg)
+6. Select your version control platform for deploying purpose, in this case I am using GitHub. If you can't see your repo you want to deploy, choose **Configure the Netlify app on GitHub**
+7. Install Netlify to your GitHub account.
+8. In the Repository access section, choose **Only select repositories** radio button, then select your repo that you want to deploy.
+9. You will be asked for a confirmation about the deployable repository you choose.
+10. Define your site name for the Netlify for availability, once it's available, proceed to the next step.
+11. Select the active branch for deployment (e.g. `main` branch) then leave everything as is, then deploy your project to the Netlify app.
+    ![08](./src/img/readme/08-setmainbranchthendeploy.jpg)
+12. Wait for a while, once it's completed, **if you already linked your previous Netlify project page to your custom domain, remove it because your external domain can't handle two Netlify domains at once**. Head to the Netlify's sidebar and then choose **Domain Management > Production Domains > Choose your primary domain from the list and select `Remove domain`**
+    ![10](./src/img/readme/10-removeprevious.jpg)
+13. Check and add your custom domain from Niagahoster. You don't have to redo the nameservers setup again on the Niagahoster, because you already deployed your Netlify site from your previous project.
+14. Wait for several minutes, and your page will be up and running on your existing Niagahoster domain.
 
 ---
 
