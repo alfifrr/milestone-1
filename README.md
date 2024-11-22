@@ -34,7 +34,7 @@
 
 ## Link to the site
 
-[Here (redirects to https://alfii.site/)](https://alfii.site/)
+[Here (redirects to `https://alfii.site/`)](https://alfii.site/)
 
 ## About the Project
 
@@ -44,11 +44,12 @@ Gravity Gym is a modern gym website designed with a mobile-first approach. It is
 
 ## Features
 
-- **Mobile-first design**: Ensures usability across all devices.
+- **Mobile-first design**: Ensures usability and aesthetically pleasing across all devices.
 - **Parallax scrolling**: Sticky background images create a smooth, immersive experience.
 - **Offset scrolling**: Prevents content overlap with a fixed header.
 - **Responsive design**: Fits various screen sizes seamlessly.
-- **Black and lime color scheme**: Reflects energy and simplicity.
+- **Black and lime color scheme**: Beautifully designed to reflects energy and simplicity.
+- **Simplified scroll**: Scrolling through contents shouldn't be a hassle! You can scroll inside the **Services** and **Trainers** page section.
 
 ---
 
@@ -65,7 +66,7 @@ This project started with semantic HTML structure, creating a well-structured do
 
 Styling was introduced with a mobile-first approach:
 
-- **Fonts**: Google Fonts `Oswald` and `Roboto Slab`.
+- **Fonts**: Using Google Fonts' `Oswald` and `Roboto Slab`.
 - **Theme**: Black background with lime accents for a bold and modern look.
 - **Effects**: Parallax scrolling and offset adjustment for headers.
 
@@ -75,6 +76,7 @@ JavaScript improved interactivity:
 
 - A hamburger menu toggle for mobile navigation.
 - Smooth scrolling with a 75px offset to prevent content cutoff.
+- The script will wait for the page content to load first, ensuring responsiveness and interactivity.
 
 ### 4. Deployment
 
@@ -107,7 +109,7 @@ Deployed the project to a custom domain via Netlify and Niagahoster:
    ```
 4. Open the project in Visual Studio Code and start a live server:
    - Use the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
-   - Alternatively, open `index.html` directly in your browser.
+   - Alternatively, locate and open `index.html` directly in your browser.
 
 ---
 
@@ -151,13 +153,19 @@ Deployed the project to a custom domain via Netlify and Niagahoster:
   - Hero: [The Gigachad, Ernest Khalimov on bioscops.com](https://bioscops.com/ernest-khalimov-height/)
   - Background Image 1: [Victor Freitas on Pexels](https://www.pexels.com/photo/2261479/)
   - Background Image 2: [Rod Bartoletti on WallpaperCat](https://wallpapercat.com)
+  - Personal Training Service: [Sabel Blanco on Pexels](https://www.pexels.com/@sabel-blanco-662810/)
+  - Group Classes: [Wellness Gallery Catalyst Foundation on Pexels](https://www.pexels.com/@wellness-gallery-catalyst-foundation-229759139/)
+  - Nutrition Coaching: [Yaroslav Shuraev on Pexels](https://www.pexels.com/@yaroslav-shuraev-8844379/)
+  - Cardio & Strength Equipment: [Ivan Samkov on Pexels](https://www.pexels.com/@ivan-samkov-4164766)
+  - Trainer 1: [Focused Fitness Coach on Stockcake](https://stockcake.com/i/focused-fitness-coach_1070640_708584)
+  - Trainer 2: [Confident Fitness Coach on Stockcake](https://stockcake.com/i/confident-fitness-coach_1379137_922105)
 
 ---
 
 ## Design Considerations
 
 1. **Mobile-first approach**: Ensured seamless usability on smaller screens before scaling up.
-2. **Color scheme**: Black conveys sophistication, and lime adds energy.
+2. **Color scheme**: Black conveys sophistication and focus, and lime color adds energy.
 3. **Parallax scrolling**: Sticky background images for dynamic visuals.
 4. **Offset scrolling**: Prevents header from cutting content.
 
