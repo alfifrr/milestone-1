@@ -1,12 +1,10 @@
 <div align="center">
-   <img src="./src/images/logo_lg_white.png" alt="Gravity Gym Logo" width="200px">
+   <img src="./src/img/logo.png" alt="Gravity Gym Logo" width="200px">
 </div>
 <br />
 
 <div align="center">
-   <a href="https://github.com/alfifrr/milestone-1/actions/workflows/pages/pages-build-deployment">
-      <img src="https://github.com/alfifrr/milestone-1/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main" alt="GitHub Pages Deployment Status" style="display: inline-block;">
-   </a>
+   <img src="https://api.netlify.com/api/v1/badges/9dfdcb36-19d3-4f36-8076-90f117a6ecbe/deploy-status" alt="Netlify Status">
 </div>
 
 # Gravity Gym - Milestone 1 Project
@@ -128,7 +126,7 @@ Deployed the project to a custom domain via Netlify and Niagahoster:
 8. In the Repository access section, choose **Only select repositories** radio button, then select your repo that you want to deploy.
 9. You will be asked for a confirmation about the deployable repository you choose.
 10. Define your site name for the Netlify for availability, once it's available, proceed to the next step.
-11. Select the active branch for deployment (e.g. `main` branch) then leave everything as is, then deploy your project to the Netlify app.
+11. Select the active branch for deployment (e.g. `main` branch) then leave everything as is, then deploy your project to the Netlify app.  
     ![08](./src/img/readme/08-setmainbranchthendeploy.jpg)
 12. Wait for a while, once it's completed, **if you already linked your previous Netlify project page to your custom domain, remove it because your external domain can't handle two Netlify domains at once**. Head to the Netlify's sidebar and then choose **Domain Management > Production Domains > Choose your primary domain from the list and select `Remove domain`**
     ![10](./src/img/readme/10-removeprevious.jpg)
