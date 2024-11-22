@@ -557,6 +557,16 @@ footer p {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  #footer-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #newsletter {
+    grid-column: span 4;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   #services-grid {
     grid-template-columns: repeat(4, 1fr);
