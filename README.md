@@ -13,6 +13,7 @@
 
 - [Gravity Gym - Milestone 1 Project](#gravity-gym---milestone-1-project)
   - [Table of Contents](#table-of-contents)
+  - [Link to the site](#link-to-the-site)
   - [About the Project](#about-the-project)
   - [Features](#features)
   - [Development Stages](#development-stages)
@@ -30,6 +31,10 @@
   - [Design Considerations](#design-considerations)
 
 ---
+
+## Link to the site
+
+[Here (redirects to https://alfii.site/)](https://alfii.site/)
 
 ## About the Project
 
